@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+<title id="title">真心为你 · 亲密关系沟通助手</title>
+<desc id="desc">暖白背景，深绿色文字与交叠圆形，表达倾听、理解与边界。</desc>
+<defs><linearGradient id="paper" x2="1" y2="1"><stop stop-color="#f7f2e6"/><stop offset="1" stop-color="#e7eee5"/></linearGradient></defs>
+<rect width="1200" height="360" rx="24" fill="url(#paper)"/>
+<circle cx="1020" cy="140" r="125" fill="#c86c4c" opacity=".16"/>
+<circle cx="1100" cy="250" r="145" fill="#245849" opacity=".12"/>
+<path d="M55 65H150" stroke="#bc603f" stroke-width="5"/>
+<text x="55" y="150" font-family="Georgia, serif" font-size="65" font-weight="700" fill="#173e33">真心为你</text>
+<text x="57" y="208" font-family="sans-serif" font-size="26" fill="#365447">让亲近有回应，让边界被听见。</text>
+<text x="58" y="295" font-family="monospace" font-size="17" letter-spacing="3" fill="#617568">ZHENXIN WEI NI / INTIMACY COACH / v0.1</text>
+</svg>

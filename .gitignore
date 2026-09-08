@@ -1,0 +1,26 @@
+# Private chat exports and generated data must never be committed.
+data/input/*
+!data/input/.gitkeep
+outputs/*
+!outputs/.gitkeep
+
+# Python caches and local environments.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editor and operating-system files.
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 本地数据、构建产物和密钥。
+dist/
+*.zip
+*.xlsx
+*.jsonl
+.env
+.env.*
+!.env.example
