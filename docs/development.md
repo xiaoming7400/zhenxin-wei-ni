@@ -11,7 +11,7 @@ python scripts/build_release.py
 python scripts/build_release.py --check
 ```
 
-第一条同步生成 UNIVERSAL-PROMPT.md，并构建 dist/female-intimacy-coach-0.1.0.zip；第二条检查必需字段、内部链接及通用文件是否同步，不写文件。版本由 VERSION 决定。
+第一条同步生成 UNIVERSAL-PROMPT.md，并构建 dist/female-intimacy-coach-0.1.1.zip；第二条检查必需字段、内部链接及通用文件是否同步，不写文件。版本由 VERSION 决定。
 
 脚本仅打包明确列出的 16 个源文件及生成的通用文件。新增模块时需要更新脚本清单。私人记录、旧 ZIP 和父目录不在打包范围。相同输入生成相同 ZIP。
 

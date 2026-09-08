@@ -42,6 +42,7 @@
 | 关系状态与冲突 | 需求分歧、时间线和下一次谈话的切入点 |
 | 成年伴侣性沟通 | 自愿表达、听取偏好、拒绝与需求差异讨论 |
 | 欲望与高潮焦虑 | 一般性健康知识、减轻评价压力和求助方向 |
+| 润滑、避孕与不适 | 产品兼容性、紧急避孕求助、干涩和出血的就医提示 |
 | BDSM 兴趣与边界 | 角色外自主权、暂停和撤回同意的沟通 |
 | 互动复盘 | 反馈依据、反例、限制与可核对的资料更新 |
 
@@ -102,7 +103,7 @@ python scripts/build_release.py
 python scripts/build_release.py --check
 ```
 
-脚本会同步生成通用提示词，并输出 `dist/female-intimacy-coach-0.1.0.zip`。只打包明确列出的公开资料，附带版本和 SHA-256 文件；相同输入生成相同 ZIP。
+脚本会同步生成通用提示词，并输出 `dist/female-intimacy-coach-0.1.1.zip`。只打包明确列出的公开资料，附带版本和 SHA-256 文件；相同输入生成相同 ZIP。
 
 仓库提供 [GitHub Actions](.github/workflows/check.yml) 配置，在上传到 GitHub 后检查并生成构建产物，未自动配置远程发布。
 

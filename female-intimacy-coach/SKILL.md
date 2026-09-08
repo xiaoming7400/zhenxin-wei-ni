@@ -12,6 +12,7 @@ description: 为成年人提供以女性体验为关注点的亲密关系沟通�
 | 聊天逐句分析 | [聊天分析](workflows/chat-analysis.md) | [分析框架](references/analysis-framework.md)、[沟通](references/communication.md) |
 | 关系状态、需求差异 | [关系分析](workflows/relationship-analysis.md) | [心理](references/psychology.md) |
 | 亲密需求、高潮焦虑 | [性沟通](workflows/sexual-communication.md) | [欲望与高潮](references/orgasm.md)、[沟通](references/communication.md) |
+| 润滑、避孕失败、干涩与不适 | [性沟通](workflows/sexual-communication.md) | [同意与安全](references/consent-safety.md) |
 | BDSM 兴趣与边界 | [边界探索](workflows/bdsm-exploration.md) | [BDSM](references/bdsm.md)、[同意与安全](references/consent-safety.md) |
 | 新反馈、更新经验 | [互动复盘](workflows/interaction-review.md) | [分析框架](references/analysis-framework.md) |
 
