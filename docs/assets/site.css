@@ -122,6 +122,74 @@ summary { cursor: pointer; font-size: 14px; }
 @keyframes arrive { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
 .hero-copy { animation: arrive .7s ease both; }
 .diagram { animation: arrive .9s .12s ease both; }
+.impact-section { --sea-red: #a51c26; position: relative; isolation: isolate; overflow: hidden; background: #200f15; color: #fff0d9; }
+.impact-landscape { position: absolute; inset: 0; z-index: -1; background: radial-gradient(ellipse at 74% 49%, #e9553945, transparent 48%), linear-gradient(#160e16, #52202a 59%, #c33732 60%, #5b101d); }
+.impact-moon { position: absolute; width: 136px; aspect-ratio: 1; top: 12%; right: 19%; border-radius: 50%; background: #f8e3c4; box-shadow: 0 0 65px #f9b38b30; }
+.impact-moon:after { content: ""; position: absolute; inset: 13% -5% 10% 20%; border-radius: 50%; background: #391923; }
+.impact-ring { position: absolute; width: min(54vw, 740px); height: 150px; right: -2%; top: 36%; border: 3px solid #ffb79b; border-radius: 50%; transform: rotate(-15deg); box-shadow: 0 0 28px #ff664d70, inset 0 0 20px #ff664d40; }
+.impact-ring:after { content: ""; position: absolute; inset: 17px -20px; border: 1px solid #ffb79b80; border-radius: 50%; }
+.impact-axis { position: absolute; top: 0; bottom: 20%; right: 26%; width: 2px; background: linear-gradient(transparent, #ffd9a5, #ffc09a); box-shadow: 0 0 25px 6px #ff6d4b40; }
+.impact-sea { position: absolute; inset: 60% 0 0; border-top: 2px solid #ff9e79; background: repeating-linear-gradient(177deg, transparent 0 19px, #ffb09720 20px, transparent 22px 38px), radial-gradient(ellipse at 74% 0, #ff936d99, transparent 40%), linear-gradient(var(--sea-red), #430d1b); }
+.impact-sea:after { content: ""; position: absolute; top: 0; bottom: 0; left: 62%; width: 24%; background: repeating-linear-gradient(0deg, transparent 0 9px, #ffcfa270 10px 12px, transparent 13px 23px); clip-path: polygon(44% 0, 52% 0, 100% 100%, 0 100%); opacity: .5; }
+.impact-content { position: relative; padding-block: 28px 24px; }
+.impact-meta, .impact-caption { display: flex; justify-content: space-between; gap: 16px; font: 10px/1.8 var(--mono); letter-spacing: 1px; }
+.impact-meta { border-bottom: 1px solid #ffe3c63d; padding-bottom: 20px; }
+.impact-content > .micro { margin-top: 65px; color: #ffd0b5; }
+.impact-content h2 { font-size: clamp(56px, 7vw, 94px); letter-spacing: -3px; }
+.impact-content h2 span { display: block; font-size: 26px; letter-spacing: 1px; line-height: 1.65; margin-top: 20px; }
+.impact-description { font-size: 13px; line-height: 2.1; color: #ffe0cc; margin: 20px 0; }
+.impact-link { display: inline-flex; align-items: center; gap: 42px; border-bottom: 1px solid #ffc8a6; padding: 8px 0; font-size: 12px; }
+.impact-link:hover { color: #ffb998; }
+.impact-caption { margin-top: 64px; padding-top: 17px; border-top: 1px solid #ffe3c63d; }
+.wall-section { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 70px; padding-block: 88px; border-bottom: 1px solid var(--ink); }
+.wall-copy h2 { font-size: 48px; margin: 18px 0 24px; }
+.wall-copy h2 span { font-size: 29px; }
+.wall-copy > p:not(.micro) { font-size: 13px; color: var(--muted); }
+.field-controls { display: flex; gap: 10px; margin-top: 28px; }
+.field-controls button { border: 1px solid var(--ink); padding: 10px 20px; background: transparent; color: var(--ink); font-size: 12px; }
+.field-controls button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.field-controls button:hover { border-color: #b63112; }
+.wall-copy .field-message { min-height: 54px; border-left: 2px solid var(--orange); padding-left: 14px; color: var(--ink); }
+.wall-copy .field-note { font-size: 10px; }
+.field-display { background: #201c1b; color: #ff9b60; border: 1px solid var(--ink); overflow: hidden; }
+.field-readout { display: flex; justify-content: space-between; gap: 12px; padding: 15px; font: 9px/1.6 var(--mono); color: #efc5a6; }
+.field-readout:first-child { border-bottom: 1px solid #efc5a633; }
+.field-readout:last-child { border-top: 1px solid #efc5a633; }
+.field-display svg { width: 100%; display: block; }
+.field-person { transition: transform 1s ease; }
+.field-self { transform: translate(145px, 210px); }
+.field-other { transform: translate(375px, 210px); color: #e5d4bb; }
+.field-shells { fill: none; stroke: currentColor; stroke-width: 1.5; }
+.field-shells use:first-child { stroke-width: 3; }
+.field-shells use:last-child { opacity: .4; }
+.field-person circle { fill: currentColor; }
+.field-person text { fill: currentColor; font: 11px var(--mono); }
+.field-connection { stroke: #f1c28e; stroke-width: 2; stroke-dasharray: 4 8; opacity: 0; transition: opacity 1s ease; }
+.field-display[data-mode="connect"] .field-self { transform: translate(180px, 210px); }
+.field-display[data-mode="connect"] .field-other { transform: translate(340px, 210px); }
+.field-display[data-mode="connect"] .field-connection { opacity: .8; }
+@media (max-width: 1000px) {
+  .wall-section { gap: 30px; }
+  .wall-copy h2 { font-size: 40px; }
+  .wall-copy h2 span { font-size: 24px; }
+  .impact-landscape:after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, #200f1570, transparent); }
+}
+@media (max-width: 680px) {
+  .impact-content > .micro { margin-top: 170px; font-size: 9px; }
+  .impact-content h2 { font-size: 60px; }
+  .impact-content h2 span { font-size: 24px; }
+  .impact-moon { width: 85px; top: 10%; right: 22%; }
+  .impact-ring { width: 90%; height: 90px; top: 22%; right: -10%; }
+  .impact-axis { bottom: 58%; }
+  .impact-sea { top: 40%; }
+  .impact-landscape:after { background: linear-gradient(transparent 25%, #230d1670 48%, #230d1630); }
+  .impact-meta, .impact-caption { font-size: 8px; letter-spacing: 0; flex-wrap: wrap; }
+  .impact-caption { margin-top: 36px; }
+  .wall-section { grid-template-columns: 1fr; gap: 24px; padding-block: 55px; }
+  .wall-copy h2 { font-size: 42px; }
+  .field-display { width: 100%; max-width: 480px; justify-self: center; }
+  .field-readout { font-size: 8px; padding: 12px; }
+}
 @media (min-width: 1450px) { .hero-grid { padding-block: 40px 60px; } }
 @media (max-width: 1000px) {
   .wrap { width: calc(100% - 48px); }

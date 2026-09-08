@@ -1,4 +1,22 @@
 "use strict";
+const fieldModes = {
+  rest: { label: "边界保留 / REST", message: "“现在我需要一点自己的空间，这不代表我不在乎你。”" },
+  connect: { label: "边界保留 / CONNECT", message: "“我愿意和你聊聊。我们可以慢慢来，不舒服时随时暂停。”" }
+};
+document.querySelectorAll("[data-field]").forEach(button => {
+  button.addEventListener("click", () => {
+    const mode = button.dataset.field;
+    document.getElementById("field-display").dataset.mode = mode;
+    document.getElementById("field-display").setAttribute("aria-label", mode === "connect"
+      ? "心之壁：两个人靠近并建立连接，各自的八边形边界仍然完整"
+      : "心之壁：两个人各自保留完整的八边形边界");
+    document.getElementById("field-state").textContent = fieldModes[mode].label;
+    document.getElementById("field-message").textContent = fieldModes[mode].message;
+    document.querySelectorAll("[data-field]").forEach(item => {
+      item.setAttribute("aria-pressed", String(item === button));
+    });
+  });
+});
 const scenes = {
   silence: {
     id: "01",
