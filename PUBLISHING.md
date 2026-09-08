@@ -7,6 +7,7 @@
 - `female-intimacy-coach/`：当前 Skill 和生成的通用提示词（仅通用内容）。
 - `docs/`、`demos/`、`evals/`：文档、封面及虚构示例和评估用例。
 - `scripts/build_release.py`、`VERSION`、`CHANGELOG.md`：发布维护文件。
+- `scripts/check_site.py`、`docs/index.html`、`docs/assets/`：静态展示页及检查脚本，不含真实聊天数据。
 - `.github/workflows/check.yml`：静态检查与构建配置。
 
 - `scripts/build_training_dataset.py`

@@ -1,12 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
-<title id="title">真心为你 · 亲密关系沟通助手</title>
-<desc id="desc">暖白背景，深绿色文字与交叠圆形，表达倾听、理解与边界。</desc>
-<defs><linearGradient id="paper" x2="1" y2="1"><stop stop-color="#f7f2e6"/><stop offset="1" stop-color="#e7eee5"/></linearGradient></defs>
-<rect width="1200" height="360" rx="24" fill="url(#paper)"/>
-<circle cx="1020" cy="140" r="125" fill="#c86c4c" opacity=".16"/>
-<circle cx="1100" cy="250" r="145" fill="#245849" opacity=".12"/>
-<path d="M55 65H150" stroke="#bc603f" stroke-width="5"/>
-<text x="55" y="150" font-family="Georgia, serif" font-size="65" font-weight="700" fill="#173e33">真心为你</text>
-<text x="57" y="208" font-family="sans-serif" font-size="26" fill="#365447">让亲近有回应，让边界被听见。</text>
-<text x="58" y="295" font-family="monospace" font-size="17" letter-spacing="3" fill="#617568">ZHENXIN WEI NI / INTIMACY COACH / v0.1</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="540" viewBox="0 0 1440 540" role="img" aria-labelledby="title desc">
+<title id="title">真心为你 / 让理解发生，而非让谁妥协</title>
+<desc id="desc">纸白与信号橙的原创终端风格封面，几何轨道象征独立个体之间的连接。支持所有性别组合的成年关系沟通。</desc>
+<defs><pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#171917" stroke-opacity=".07"/></pattern><pattern id="stripe" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="12" height="24" fill="#171917"/></pattern></defs>
+<path fill="#efece4" d="M0 0h1440v540H0z"/><path fill="url(#grid)" d="M0 0h1440v540H0z"/><path fill="#f05228" d="M0 0h1440v12H0zM0 484h1440v56H0z"/>
+<g font-family="Consolas, monospace" fill="#171917" font-size="16" letter-spacing="2"><text x="52" y="60">ZX / COMMUNICATION SYSTEM</text><text x="1140" y="60">FILE NO. 001</text></g>
+<path d="M52 85h1336M52 450h1336M830 85v365" fill="none" stroke="#171917"/>
+<text x="48" y="247" font-family="SimSun, 'Songti SC', serif" font-weight="900" font-size="142" letter-spacing="-8" fill="#171917">真心为你</text><text x="56" y="310" font-family="SimSun, 'Songti SC', serif" font-size="32" fill="#171917">让理解发生，而非让谁妥协。</text><text x="56" y="410" font-family="Consolas, monospace" font-size="16" letter-spacing="3" fill="#5a5d55">LISTEN / UNDERSTAND / RESPECT</text>
+<g transform="translate(1110 262)" fill="none" stroke="#f05228"><circle r="139"/><ellipse rx="139" ry="53" transform="rotate(-45)" stroke-width="2"/><ellipse rx="139" ry="53" transform="rotate(45)" stroke-width="2"/><circle r="92" stroke-dasharray="3 10"/><path d="M-167 0h334M0-162v324" stroke="#171917" stroke-opacity=".3"/><circle r="15" fill="#f05228"/><circle cx="98" cy="-98" r="7" fill="#171917" stroke="none"/></g>
+<text x="920" y="436" font-family="Consolas, monospace" font-size="13" letter-spacing="2" fill="#171917">CONNECTION ≠ CONTROL</text><path d="M0 484h38v56H0zM1402 484h38v56h-38z" fill="url(#stripe)"/><text x="56" y="520" font-family="'Microsoft YaHei', sans-serif" font-size="18" font-weight="700" fill="#171917">不同的我们，同样值得被理解。 男对女 / 女对男 / 男男 / 女女 / 更多性别组合</text>
 </svg>
